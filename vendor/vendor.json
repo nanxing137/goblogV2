@@ -3,6 +3,12 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "PxYfr9i6+uo3P+q2N4fZU1d/O6I=",
+			"path": "github.com/Unknwon/com",
+			"revision": "757f69c95f3e6e3ef823a57bfc3b4ca50804523e",
+			"revisionTime": "2019-08-04T04:29:17Z"
+		},
+		{
 			"checksumSHA1": "qlEzrgKgIkh7y0ePm9BNo1cNdXo=",
 			"path": "github.com/gin-contrib/sse",
 			"revision": "43f0f29dbd2b3f0feeebff91fd9cda22db296938",
