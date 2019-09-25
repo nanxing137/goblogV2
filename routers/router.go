@@ -2,7 +2,7 @@ package routers
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/goblog/gpblogv2/controllers"
+	"github.com/thornshell/goblogv2/controllers"
 )
 
 func Init(engine *gin.Engine) {
