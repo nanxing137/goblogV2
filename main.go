@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/thornshell/goblogV2/routers"
 	"net/http"
 
@@ -60,6 +61,7 @@ func setupRouter() *gin.Engine {
 }
 
 func main() {
+	fmt.Println("open:", "http://localhost:8080/")
 	r := setupRouter()
 	routers.Init(r)
 	// Listen and Server in 0.0.0.0:8080
