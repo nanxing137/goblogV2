@@ -22,7 +22,7 @@ var (
 
 func init() {
 	var err error
-	Cfg, err = ini.Load("conf/app.ini")
+	Cfg, err = ini.Load("conf/db/app.ini")
 	if err != nil {
 		log.Fatal(2, "Fail to parse 'conf/app.ini': %v", err)
 	}
