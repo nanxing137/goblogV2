@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/thornshell/goblogv2/routers"
+	"github.com/thornshell/goblogV2/routers"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
