@@ -6,5 +6,5 @@ import (
 )
 
 func Init(engine *gin.Engine) {
-	engine.GET("/aaa", controllers.Index)
+	engine.GET("/index", controllers.Index)
 }

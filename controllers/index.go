@@ -8,4 +8,5 @@ import (
 func Index(ctx *gin.Context) {
 	name := ctx.DefaultQuery("name", "a wei")
 	ctx.String(http.StatusOK, "Hello %s", name)
+
 }
