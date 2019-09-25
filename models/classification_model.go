@@ -1,6 +1,8 @@
 package models
 
+import "github.com/jinzhu/gorm"
+
 type Classification struct {
-	Id   int64
+	gorm.Model
 	Name string
 }

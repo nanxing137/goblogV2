@@ -1,24 +1,32 @@
 package models
 
 import (
-	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"encoding/json"
+	"fmt"
+	"github.com/jinzhu/gorm"
 	"time"
 )
 
 type Article struct {
-	Id               int64  `gorm:"primary_key"`
-	ClickQuantity    int    `gorm:"type:bigint(20);"`
-	Content          string `gorm:"type:varchar(255);"`
-	CreationDate     time.Time
-	Introduction     string
-	ModifiedDate     time.Time
-	Title            string
-	Version          int64
-	AuthorId         int64
-	ClassificationId int64
+	gorm.Model
+	ClickQuantity  int
+	Content        string
+	CreationDate   time.Time
+	Introduction   string
+	ModifiedDate   time.Time
+	Title          string
+	Version        int64
+	User           User           `gorm:"ForeignKey:ID"`
+	Classification Classification `gorm:"ForeignKey:ID"`
+	Labels         []Label        `gorm:"many2many:label_article;"`
 }
 
 func GetArticle(id int64) (article Article) {
-	Db.Find(&article, id)
+	find := Db.Find(&article, id)
+	bytes, _ := json.Marshal(find)
+	fmt.Printf(string(bytes))
+	a := Article{Model: gorm.Model{ID: 1, CreatedAt: time.Now(), DeletedAt: &time.Time{}}}
+	a.ID = 1
+	Db.Model(&Article{}).Update("ID", gorm.Expr("11"))
 	return
 }

@@ -3,6 +3,7 @@ package models
 import (
 	"fmt"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql"
 	setting "github.com/thornshell/goblogV2/pkg"
 	"log"
 )
@@ -44,6 +45,8 @@ func init() {
 	Db.SingularTable(true)
 	Db.DB().SetMaxIdleConns(10)
 	Db.DB().SetMaxOpenConns(100)
+
+	Db.AutoMigrate(&Classification{}, &User{}, &Label{}, &Article{})
 }
 
 func CLoseDB() {

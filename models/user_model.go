@@ -1,13 +1,16 @@
 package models
 
-import "time"
+import (
+	"github.com/jinzhu/gorm"
+	"time"
+)
 
 /**
 models写和数据的操作 dao层
 */
 
 type User struct {
-	Id                int64
+	gorm.Model
 	Address           string
 	Email             string
 	LastActive        time.Time
