@@ -3,6 +3,12 @@
 	"ignore": "test",
 	"package": [
 		{
+			"checksumSHA1": "PxYfr9i6+uo3P+q2N4fZU1d/O6I=",
+			"path": "github.com/Unknwon/com",
+			"revision": "757f69c95f3e6e3ef823a57bfc3b4ca50804523e",
+			"revisionTime": "2019-08-04T04:29:17Z"
+		},
+		{
 			"checksumSHA1": "qlEzrgKgIkh7y0ePm9BNo1cNdXo=",
 			"path": "github.com/gin-contrib/sse",
 			"revision": "43f0f29dbd2b3f0feeebff91fd9cda22db296938",
@@ -41,10 +47,40 @@
 			"versionExact": "v1.4.0"
 		},
 		{
+			"checksumSHA1": "mmDJhN+XM542Z4IO0Icu63yhn0g=",
+			"path": "github.com/go-ini/ini",
+			"revision": "700781759788472518f4ea52321519b066061a7b",
+			"revisionTime": "2019-09-23T06:11:19Z"
+		},
+		{
+			"checksumSHA1": "P3Irru4RjWFI9sqUB41xwmyf5XM=",
+			"path": "github.com/go-sql-driver/mysql",
+			"revision": "6c79a37b2e06d0297e8a76a70b747f72bdfa8338",
+			"revisionTime": "2019-09-17T09:31:45Z"
+		},
+		{
 			"checksumSHA1": "C8nYObwbo2oyODQbIT83lY37ajM=",
 			"path": "github.com/golang/protobuf/proto",
 			"revision": "1680a479a2cfb3fa22b972af7e36d0a0fde47bf8",
 			"revisionTime": "2019-09-20T23:43:18Z"
+		},
+		{
+			"checksumSHA1": "GlqviP0CjRtD8Lo/T0Ye2IUv4/8=",
+			"path": "github.com/jinzhu/gorm",
+			"revision": "0c98e7d712e2fdc3a191a7cd2a37fabfce3768f2",
+			"revisionTime": "2019-09-12T14:17:31Z"
+		},
+		{
+			"checksumSHA1": "eECxSkwh0WmhLwaxHfkvcLOWS08=",
+			"path": "github.com/jinzhu/gorm/dialects/mysql",
+			"revision": "0c98e7d712e2fdc3a191a7cd2a37fabfce3768f2",
+			"revisionTime": "2019-09-12T14:17:31Z"
+		},
+		{
+			"checksumSHA1": "iqeSAF7imnVsW+iqLqf6kkYn1VU=",
+			"path": "github.com/jinzhu/inflection",
+			"revision": "f5c5f50e6090ae76a29240b61ae2a90dd810112e",
+			"revisionTime": "2019-06-03T04:28:36Z"
 		},
 		{
 			"checksumSHA1": "hNqq14LFOpVJ6hCs+OTAEKrWUkk=",
@@ -81,6 +117,12 @@
 			"revision": ""
 		},
 		{
+			"checksumSHA1": "LiyXfqOzaeQ8vgYZH3t2hUEdVTw=",
+			"path": "google.golang.org/appengine/cloudsql",
+			"revision": "b2f4a3cf3c67576a2ee09e1fe62656a5086ce880",
+			"revisionTime": "2019-06-06T17:30:15Z"
+		},
+		{
 			"checksumSHA1": "P/k5ZGf0lEBgpKgkwy++F7K1PSg=",
 			"path": "gopkg.in/go-playground/validator.v8",
 			"revision": "5f1438d3fca68893a817e4a66806cea46a9e4ebf",
@@ -93,5 +135,5 @@
 			"revisionTime": "2018-11-15T11:05:04Z"
 		}
 	],
-	"rootPath": "github.com/goblog/project"
+	"rootPath": "github.com/thornshell/goblogV2"
 }
