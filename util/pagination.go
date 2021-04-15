@@ -1,9 +1,10 @@
 package util
 
 import (
+	setting "goblogV2/pkg"
+
 	"github.com/Unknwon/com"
 	"github.com/gin-gonic/gin"
-	setting "github.com/thornshell/goblogV2/pkg"
 )
 
 func GetPage(c *gin.Context) int {

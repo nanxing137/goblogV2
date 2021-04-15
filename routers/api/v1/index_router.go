@@ -1,8 +1,9 @@
 package v1
 
 import (
+	"goblogV2/controllers"
+
 	"github.com/gin-gonic/gin"
-	"github.com/thornshell/goblogV2/controllers"
 )
 
 func Init(engine *gin.Engine) {

@@ -1,10 +1,11 @@
 package v1
 
 import (
-	"github.com/gin-gonic/gin"
-	"github.com/thornshell/goblogV2/models"
+	"goblogV2/models"
 	"net/http"
 	"strconv"
+
+	"github.com/gin-gonic/gin"
 )
 
 func GetArticle(c *gin.Context) {

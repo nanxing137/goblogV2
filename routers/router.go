@@ -1,9 +1,10 @@
 package routers
 
 import (
+	setting "goblogV2/pkg"
+	v1 "goblogV2/routers/api/v1"
+
 	"github.com/gin-gonic/gin"
-	setting "github.com/thornshell/goblogV2/pkg"
-	v1 "github.com/thornshell/goblogV2/routers/api/v1"
 )
 
 func InitRouter() *gin.Engine {
